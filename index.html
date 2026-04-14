@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Connect WK Studio</title>
+    <style>
+        :root {
+            --bg: #0f1117;
+            --card: #1a1d27;
+            --accent: #3b82f6;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --border: #2d3348;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        header {
+            text-align: center;
+            padding: 80px 24px 48px;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            margin-bottom: 24px;
+        }
+        header .icon-placeholder {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+        header h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; }
+        header p { color: var(--muted); font-size: 1.1rem; }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            padding: 8px 20px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: rgba(59, 130, 246, 0.1); }
+        section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        section h3 {
+            font-size: 1.1rem;
+            margin: 20px 0 8px;
+            color: var(--text);
+        }
+        section p, section li {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        section ul { padding-left: 20px; }
+        section li { margin-bottom: 8px; }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .feature {
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .feature h3 { margin: 0 0 8px; font-size: 1rem; }
+        .feature p { margin: 0; font-size: 0.9rem; }
+        footer {
+            text-align: center;
+            padding: 48px 24px;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+        #privacy, #support { scroll-margin-top: 24px; }
+        @media (max-width: 600px) {
+            header { padding: 48px 16px 32px; }
+            header h1 { font-size: 1.6rem; }
+            section { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="app-icon.png" alt="SQL Connect WK Studio" width="100" height="100">
+    <h1>SQL Connect WK Studio</h1>
+    <p>Professional database management for iOS and iPadOS</p>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#support">Support</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- Features -->
+    <section id="features">
+        <h2>Features</h2>
+        <p>SQL Connect WK Studio is a professional database management tool that lets you connect to and manage SQL Server (MSSQL), PostgreSQL, MySQL, and SQLite databases directly from your iPhone or iPad.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Multi-Database Support</h3>
+                <p>Connect to MSSQL, PostgreSQL, MySQL, and SQLite databases — both locally and remotely.</p>
+            </div>
+            <div class="feature">
+                <h3>SQL Editor</h3>
+                <p>Execute SQL queries with a built-in editor featuring syntax suggestions and result export.</p>
+            </div>
+            <div class="feature">
+                <h3>Database Browser</h3>
+                <p>Explore databases, tables, views, and stored procedures with an intuitive interface.</p>
+            </div>
+            <div class="feature">
+                <h3>Script Catalog</h3>
+                <p>Save and reuse SQL scripts offline. Organize with tags and notes.</p>
+            </div>
+            <div class="feature">
+                <h3>iCloud Sync</h3>
+                <p>Optionally sync connections, passwords, and scripts across all your Apple devices.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure by Design</h3>
+                <p>Passwords stored in iOS Keychain. No analytics, no tracking, no third-party services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy -->
+    <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p><strong>Last updated: April 13, 2026</strong></p>
+
+        <h3>Introduction</h3>
+        <p>This Privacy Policy describes how SQL Connect WK Studio ("the App") handles your information. The App is designed to manage SQL databases locally and remotely on your iOS and iPadOS device.</p>
+
+        <h3>Data Collection</h3>
+        <p>SQL Connect WK Studio does not collect, transmit, or share any personal data with the developer or any third parties. The App does not include analytics, tracking, or advertising frameworks.</p>
+
+        <h3>Data Storage</h3>
+        <p>The App stores the following connection data locally on your device:</p>
+        <ul>
+            <li><strong>Passwords</strong> — stored exclusively in the iOS Keychain, protected by hardware-level encryption. With iCloud Sync enabled, passwords synchronize via iCloud Keychain using Apple's end-to-end encryption.</li>
+            <li><strong>Host addresses &amp; usernames</strong> — stored locally using standard iOS storage (UserDefaults). With iCloud Sync enabled, they synchronize via Apple's iCloud key-value storage, protected by the user's Apple account.</li>
+            <li><strong>Connection settings</strong> (port, SSL, timeout, provider type) — stored alongside host and username using the same mechanisms.</li>
+            <li><strong>SQL scripts</strong> — stored locally using on-device storage. With iCloud Sync enabled, they synchronize via Apple's iCloud key-value storage.</li>
+        </ul>
+
+        <h3>iCloud Sync</h3>
+        <p>SQL Connect WK Studio offers an optional iCloud synchronization feature, disabled by default. When enabled by the user in Settings, the following data is synchronized across the user's Apple devices:</p>
+        <ul>
+            <li><strong>Connection configurations</strong> (name, host address, username, port, SSL settings) — synchronized via Apple's iCloud key-value storage (NSUbiquitousKeyValueStore), protected by the user's Apple account.</li>
+            <li><strong>Connection passwords</strong> — synchronized via iCloud Keychain, which uses Apple's end-to-end encryption. Passwords are never stored in plaintext outside of iOS Keychain.</li>
+            <li><strong>SQL scripts</strong> — synchronized via Apple's iCloud key-value storage.</li>
+        </ul>
+        <p>All synchronized data is stored exclusively in the user's personal Apple iCloud account. No data is transmitted to any external servers or third parties.</p>
+        <p>Users can disable iCloud sync at any time in the app's Settings. When disabled, all data remains on the device and no further synchronization occurs. Users can also reset all cloud data from the Settings screen.</p>
+
+        <h3>Network Communications</h3>
+        <p>The App communicates only with database servers that you explicitly configure. No data is sent to any other servers. When connecting to remote databases, the App uses the connection protocol specified by the user, with optional SSL/TLS encryption.</p>
+
+        <h3>Local Network Access</h3>
+        <p>The App may request permission to access your local network to connect to database servers running on your local network. This access is used exclusively for database connections that you initiate.</p>
+
+        <h3>Data Security</h3>
+        <p>The App leverages iOS platform security features including Keychain Services for credential storage and iCloud Keychain for secure cross-device password synchronization. Connection data synced via iCloud is protected by Apple's iCloud security infrastructure. The developer does not have access to your database credentials, connection data, or any data stored in the databases you manage.</p>
+
+        <h3>Third-Party Services</h3>
+        <p>SQL Connect WK Studio does not integrate with any third-party analytics, advertising, or data collection services.</p>
+
+        <h3>Changes to This Policy</h3>
+        <p>This Privacy Policy may be updated from time to time. Any changes will be reflected in an updated version of the App and on this page.</p>
+
+        <h3>Disclaimer</h3>
+        <p>SQL Connect WK Studio is provided "as is" without warranty of any kind, express or implied. The developer shall not be held liable for any damages, data loss, or issues arising from the use of this application. Users are solely responsible for their database operations and data management decisions.</p>
+    </section>
+
+    <!-- Support -->
+    <section id="support">
+        <h2>Support</h2>
+
+        <h3>Contact</h3>
+        <p>If you need help with SQL Connect WK Studio or have questions, please contact the developer:</p>
+        <ul>
+            <li>Email: <a href="mailto:witkompapp@gmail.com" style="color: var(--accent);">witkompapp@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/witkowski01" style="color: var(--accent);">github.com/witkowski01</a></li>
+        </ul>
+
+        <h3>Frequently Asked Questions</h3>
+
+        <h3>How do I connect to a database?</h3>
+        <p>Tap the "+" button on the Connections screen, select your database type (MSSQL, PostgreSQL, MySQL, or SQLite), enter your connection details, and tap Save. Then tap the connection to connect.</p>
+
+        <h3>How does iCloud Sync work?</h3>
+        <p>Go to Settings and enable "iCloud Sync". Your saved connections (including passwords via iCloud Keychain) and SQL scripts will automatically sync across all your Apple devices signed in to the same iCloud account. You can disable sync at any time.</p>
+
+        <h3>Is my data secure?</h3>
+        <p>Yes. Passwords are stored in the iOS Keychain with hardware-level encryption. When iCloud Sync is enabled, passwords sync via iCloud Keychain with Apple's end-to-end encryption. Connection configurations sync via Apple's iCloud key-value storage, protected by your Apple account. The app contains no analytics, tracking, or third-party services.</p>
+
+        <h3>What database types are supported?</h3>
+        <p>SQL Connect WK Studio supports Microsoft SQL Server (MSSQL), PostgreSQL, MySQL, and SQLite databases.</p>
+
+        <h3>Can I use the app offline?</h3>
+        <p>Yes. SQLite databases work entirely offline. The SQL Script Catalog is available offline. Remote database connections require network access to the database server.</p>
+
+        <h3>System Requirements</h3>
+        <p>SQL Connect WK Studio requires iOS 18.0 or later, and is compatible with iPhone and iPad.</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Konrad Witkowski. All rights reserved.</p>
+    <p style="margin-top: 8px;">
+        <a href="#privacy">Privacy Policy</a> &middot;
+        <a href="#support">Support</a> &middot;
+        <a href="mailto:witkompapp@gmail.com">Contact</a>
+    </p>
+</footer>
+
+</body>
+</html>
