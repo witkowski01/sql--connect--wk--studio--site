@@ -333,7 +333,7 @@
         <div class="brand-row">
             <img src="app-icon.png" alt="SQL Connect WK Studio app icon" width="92" height="92">
             <div>
-                <span class="eyebrow">iOS &amp; iPadOS 26</span>
+                <span class="eyebrow">iOS &amp; iPadOS 18+</span>
                 <h1>SQL Connect WK Studio</h1>
             </div>
         </div>
@@ -376,7 +376,7 @@
             </div>
             <div class="feature">
                 <h3>Secure Storage</h3>
-                <p>Connection metadata stays in app storage, passwords stay in iOS Keychain, and optional iCloud Sync remains user controlled.</p>
+                <p>Passwords are stored in iOS Keychain with hardware-level encryption. The app contains no analytics, tracking or third-party advertising services.</p>
             </div>
         </div>
     </section>
@@ -433,7 +433,7 @@
     <section id="privacy">
         <div class="section-heading">
             <h2>Privacy Policy</h2>
-            <p><strong>Last updated: June 11, 2026</strong></p>
+            <p><strong>Last updated: June 12, 2026</strong></p>
         </div>
 
         <div class="privacy-grid">
@@ -449,12 +449,14 @@
 
             <div class="text-block">
                 <h3>Local Data Storage</h3>
-                <p>The App stores connection names, provider types, host addresses, usernames, ports, SSL/TLS settings, timeouts, Firebird database paths and saved scripts on the device. Passwords are stored separately in iOS Keychain.</p>
+                <p>The App stores connection names, provider types, host addresses, usernames, ports, SSL/TLS settings, timeouts, Firebird database paths and saved scripts on the device.</p>
+                <p>Passwords are stored exclusively in iOS Keychain, protected by hardware-level encryption. They are never stored in plaintext in connection configuration data.</p>
             </div>
 
             <div class="text-block">
                 <h3>iCloud Sync</h3>
-                <p>Optional iCloud Sync can synchronize connection metadata and scripts through Apple's iCloud key-value storage. Passwords synchronize only through iCloud Keychain when the user enables that Apple feature.</p>
+                <p>Optional iCloud Sync can synchronize connection metadata and scripts through Apple's iCloud key-value storage. Passwords synchronize only through iCloud Keychain, which uses Apple's end-to-end encryption.</p>
+                <p>All synchronized data is stored in the user's personal Apple iCloud account. Users can disable iCloud Sync at any time in Settings.</p>
             </div>
 
             <div class="text-block">
@@ -463,8 +465,28 @@
             </div>
 
             <div class="text-block">
-                <h3>Security</h3>
-                <p>The App uses platform security features including Keychain Services and optional iCloud Keychain. Users remain responsible for the database servers, credentials and queries they configure.</p>
+                <h3>Local Network Access</h3>
+                <p>The App may request permission to access the local network to connect to database servers running on the user's local network. This access is used only for database connections initiated by the user.</p>
+            </div>
+
+            <div class="text-block">
+                <h3>Data Security</h3>
+                <p>The App uses platform security features including Keychain Services and optional iCloud Keychain. The developer does not have access to database credentials, connection data or database content managed by the user.</p>
+            </div>
+
+            <div class="text-block">
+                <h3>Third-Party Services</h3>
+                <p>SQL Connect WK Studio does not integrate with third-party analytics, advertising or data collection services.</p>
+            </div>
+
+            <div class="text-block">
+                <h3>Changes to This Policy</h3>
+                <p>This Privacy Policy may be updated from time to time. Any changes will be reflected in an updated version of the App and on this page.</p>
+            </div>
+
+            <div class="text-block">
+                <h3>Disclaimer</h3>
+                <p>SQL Connect WK Studio is provided "as is" without warranty of any kind. Users are solely responsible for their database operations and data management decisions.</p>
             </div>
         </div>
     </section>
@@ -506,12 +528,17 @@
 
             <div>
                 <h3>How does iCloud Sync work?</h3>
-                <p>When enabled in Settings, connection metadata and scripts sync through the user's Apple iCloud account. Password sync uses iCloud Keychain and can be disabled by the user.</p>
+                <p>Go to Settings and enable "iCloud Sync". Your saved connections, including passwords via iCloud Keychain, and SQL scripts will automatically sync across Apple devices signed in to the same iCloud account. You can disable sync at any time.</p>
+            </div>
+
+            <div>
+                <h3>Is my data secure?</h3>
+                <p>Yes. Passwords are stored in the iOS Keychain with hardware-level encryption. When iCloud Sync is enabled, passwords sync via iCloud Keychain with Apple's end-to-end encryption. Connection configurations sync via Apple's iCloud key-value storage, protected by your Apple account. The app contains no analytics, tracking or third-party services.</p>
             </div>
 
             <div>
                 <h3>System Requirements</h3>
-                <p>SQL Connect WK Studio requires iOS 26.0 or iPadOS 26.0 or later and is compatible with iPhone and iPad.</p>
+                <p>SQL Connect WK Studio requires iOS 18.0 or later and is compatible with iPhone and iPad.</p>
             </div>
         </div>
     </section>
